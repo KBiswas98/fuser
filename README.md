@@ -3,7 +3,7 @@
 
 
 
-1. Well defined redux enviroment easy to debug.
+1. Well defined redux environment easy to debug.
 2. Async operations.
-3. Showing rating based on average.
+3. Showing ratings based on average.
 
