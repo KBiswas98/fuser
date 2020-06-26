@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Store from './fuser/redux/config/store'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Store />
   </React.StrictMode>,
   document.getElementById('root')
 );
