@@ -43,7 +43,7 @@ export default function Home() {
                                     <td>{item.account_id}</td>
 
                                     <td>
-                                        {_.values(
+                                        {app.length <= 0 ? <p>No data found.</p> : _.values(
                                             _.find(app, ['key', item.account_id]).value.apps)
                                                 .map(xitem => <StarAndApps title={xitem.title} xkey={item.account_id} />)}</td>
 
@@ -72,7 +72,7 @@ function StarAndApps({ title, xkey }) {
 
     useEffect(() => {
         setrating(_.find(rating, ['account_id', xkey ]) === undefined ? 0 : _.find(rating, ['account_id', xkey ]).rating)
-    }, [])
+    }, [rating])
 
     return (
         <div>
