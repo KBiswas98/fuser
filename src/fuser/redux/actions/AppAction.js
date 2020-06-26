@@ -37,7 +37,7 @@ export const GettingApps = () => {
                         value: item.val()
                     }
                     _apps.push(_tmp)
-                    // console.log(_tmp)
+                    // //console.log(_tmp)
                 })
             })
 

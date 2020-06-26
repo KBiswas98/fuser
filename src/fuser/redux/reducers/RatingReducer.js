@@ -9,7 +9,7 @@ const RatingReducer = (state = initialState, action) => {
         case 'SAVE_RATING':
             return {
                 ...state,
-                rating: [...state.rating, action.payload ],
+                rating: action.payload ,
                 isRatingLoading: false
             }
         case 'RATING_LOADING': 
